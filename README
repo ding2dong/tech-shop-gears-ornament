@@ -1,0 +1,45 @@
+
+
+Don’t forget to go to Digikey.com and purchase:
+PROGRAMMER MCU PICKIT 3
+http://search.digikey.com/scripts/DkSearch/dksus.dll?x=0&y=0&lang=en&site=us&KeyWords=PG164130-ND
+(Item # PG164130-ND)
+
+CABLE IN-CIRCUIT 10" W/O LEGS (TAG-CONNECT cable with RJ-11 connector)
+http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&lang=en&site=us&keywords=TC2030-MC
+P-NL-10-ND&x=0&y=0
+(Item # TC2030-MCP-NL-10-ND)
+
+ADAPTER RJ-11 TO ICSP
+http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&lang=en&site=us&keywords=AC164110-N
+D&x=0&y=0
+(Item # AC164110-ND)
+
+
+￼Hack it!
+NOTE: Make sure the gear is fully charged before starting any hacking,
+and keep in mind that the on-board battery powers the circuit during
+programming.
+Download the current version of MPLAB IDE:
+http://www.microchip.com/stellent/idcplg
+?IdcService=SS_GET_PAGE&nodeId= 1406&dDocName=en019469
+Download the gear source code from:
+http://bethschechter.com/GearSpin_16F 1823.zip
+Open the MPLAB IDE and select File > Open Workspace. Select Gearspin
+from the .zip file mentioned above.
+The PIC we are programming is the 16F1823. You need to choose Config-
+ure > Select Device from the menu inMPLAB IDE. Select “16F1823” from
+the device option in the upper left hand corner of that window.
+A Voltage Caution Error window will appear. Hit OK.
+You can change the programming code by selecting the "main.c" file in
+the Gearspin.mcw window.
+Select Project > Build to compile the code.
+Make sure the switch on the actual gear is set to on, the switch will
+be set towards the PIC chip. Reference
+picture <3> to see this.
+Place the end of the TAG-CONNECT cable into the programming port as
+specified in picture <3>. Keep it at a 90 degree angle and pushed all
+the into the board so the pins make contact.
+Select Programmer > Program while holding the TAG-CONNECT cable into
+the programming port.
+The message Programming/Verify complete will appear when you are finished.
